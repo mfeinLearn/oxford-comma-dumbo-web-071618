@@ -1,4 +1,4 @@
 def oxford_comma(array)
   # array.join(", ")
-  array.to_sentence
+  array.join(', ').replace(/, ([^,]*)$/, ' and $1')
 end
