@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 def oxford_comma(array)
   if array.length == 2
   array[-2] << " and "
@@ -6,7 +6,7 @@ def oxford_comma(array)
   elsif array.length == 1
   	array.join
   elsif array.length > 2
-  binding.pry 
+  # binding.pry 
     array[-1].prepend "and "
 	array.join(", ")
   end
